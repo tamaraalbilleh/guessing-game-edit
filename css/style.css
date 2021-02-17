@@ -1,0 +1,31 @@
+
+head ul li {
+    display: inline;
+    color: rgb(7, 84, 107);
+    }
+
+
+body {
+        background-image: url("https://github.com/tamaraalbilleh/guessing-game/blob/main/imgs/background.jpg?raw=true"); 
+        width: 900px;
+        margin: auto;
+        text-align: center;
+        font-size: larger;
+        font-weight: bold;
+ }
+    
+
+p {
+    line-height: 30px;
+    background-color: rgb(100, 210, 237);
+    color: rgb(4, 45, 58);
+    
+}
+h2 {
+color: rgb(0, 39, 39);
+}
+footer {
+    background-color: rgb(7, 84, 107);
+    color: white;
+    border-radius: 5px;
+}

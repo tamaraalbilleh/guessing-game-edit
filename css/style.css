@@ -1,31 +1,96 @@
 
-head ul li {
+.navigation {
     display: inline;
     color: rgb(7, 84, 107);
+    text-align: right;
+    float: right;
+    text-decoration: none;
+    text-emphasis: none;
+    text-align: right;
+    padding: 30px;
+    margin-right: 100px;
+    justify-content: space-around;
     }
 
 
+    
 body {
-        background-image: url("https://github.com/tamaraalbilleh/guessing-game/blob/main/imgs/background.jpg?raw=true"); 
-        width: 900px;
+        background : rgb(200, 229, 255) ; 
+        width: 880px;
         margin: auto;
-        text-align: center;
+        text-align: left;
         font-size: larger;
         font-weight: bold;
+        padding: 50px;
+        border-color:rgb(7, 84, 107);
+        border-width: 1px;
+        border-style: outset;
+        border-radius: 10px;
+        box-shadow:8px 10px 16px -4px rgb(7, 84, 107),
+    -7px 10px 16px -4px #2AC9DB;
  }
     
-
+h1 {
+    text-align: center;
+}
 p {
     line-height: 30px;
-    background-color: rgb(100, 210, 237);
+    background-color: rgb(255, 255, 255);
     color: rgb(4, 45, 58);
-    
+    padding: 20px;
+    border-radius: 20px;
+    border-color:rgb(7, 84, 107);
+    border-width: 4px;
+    border-style: outset;
+    box-shadow:8px 10px 16px -4px rgb(7, 84, 107),
+    -7px 10px 16px -4px #2AC9DB; ;
 }
 h2 {
+text-align: center;
 color: rgb(0, 39, 39);
 }
 footer {
     background-color: rgb(7, 84, 107);
     color: white;
-    border-radius: 5px;
+    border-radius: 20px;
+    padding: 20px ;
+    border-color: white;
+    border-width: 4px;
+    border-style: outset;
+    box-shadow:8px 10px 16px -4px rgb(7, 84, 107),
+    -7px 10px 16px -4px #2AC9DB; 
+}
+img {
+    align-items: center;
+    margin: auto;
+    border-radius: 20px;
+    align-items: middle;
+    margin-left: 30px;
+    box-shadow:8px 10px 16px -4px rgb(7, 84, 107),
+    -7px 10px 16px -4px #2AC9DB; ;
+}
+ul {line-height: 30px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(4, 45, 58);
+    padding: 20px;
+    border-radius: 20px;
+    border-color:rgb(7, 84, 107);
+    border-width: 4px;
+    border-style: outset;
+    box-shadow:8px 10px 16px -4px rgb(7, 84, 107),
+    -7px 10px 16px -4px #2AC9DB; 
+    padding-left: 40px;
+}
+ol {
+    line-height: 30px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(4, 45, 58);
+    padding: 20px;
+    border-radius: 20px;
+    border-color:rgb(7, 84, 107);
+    border-width: 4px;
+    border-style: outset;
+    box-shadow:8px 10px 16px -4px rgb(7, 84, 107),
+    -7px 10px 16px -4px #2AC9DB; 
+    padding-left: 40px;
 }

@@ -3,13 +3,13 @@ let score =0;
 
 // welcome message //
 let userName = prompt ('Hi there, whats your name ?' );
-function nameConfirmation (a){
+function nameConfirmation (nameConfirmation){
   let empty = '';
-  userName = a;
+  userName = nameConfirmation;
   while (userName === empty ){
     userName = prompt ('please enter your name ,I want us to be friends ');
   }
-  return (a);
+  return (nameConfirmation);
 }
 
 nameConfirmation (userName);
@@ -17,54 +17,54 @@ alert ('Nice to meet you '+ userName + ' my name is Tamara');
 alert (' lets see how much you can guess about me ^_^ , please answer with a yes/y or no/n ');
 
 //answer validity check//
-function questionsYes (userAnswer,d,e,f,g,h){
+function questionsYes (userAnswer,userAnswerResubmit,rightAnswerConsoleResponse,rightAnswerAlertResponse,wrongAnswerConsoleResponse,wrongAnswerAlertResponse){
   userAnswer.toLowerCase();
   while ((userAnswer.toLowerCase() !== 'yes') && (userAnswer.toLowerCase() !== 'y') && (userAnswer.toLowerCase() !== 'no') && (userAnswer.toLowerCase() !== 'n')){
     console.log ('Invalid answer, please try again with a yes/no or y/n');
     alert ('invalid answer , please try again with a yes/no or a y/n');
-    userAnswer =prompt (d.toLowerCase());
+    userAnswer =prompt (userAnswerResubmit.toLowerCase());
   }
   switch (userAnswer.toLowerCase()){
   case 'y':
   case 'yes':
-    console.log (e);
-    alert (f);
+    console.log (rightAnswerConsoleResponse);
+    alert (rightAnswerAlertResponse);
     score++;
     alert (' your current score is '+ score +' out of 7');
     break;
   case 'n':
   case 'no':
-    console.log (g);
-    alert (h);
+    console.log (wrongAnswerConsoleResponse);
+    alert (wrongAnswerAlertResponse);
     alert (' your current score is '+ score +' out of 7');
     break;
   }
-  return (userAnswer,d,e,f,g,h);
+  return (userAnswer,userAnswerResubmit,rightAnswerConsoleResponse,rightAnswerAlertResponse,wrongAnswerConsoleResponse,wrongAnswerAlertResponse);
 }
 
-function questionsNo (userAnswer,d,e,f,g,h){
+function questionsNo (userAnswer,userAnswerResubmit,rightAnswerConsoleResponse,rightAnswerAlertResponse,wrongAnswerConsoleResponse,wrongAnswerAlertResponse){
   userAnswer.toLowerCase();
   while ((userAnswer.toLowerCase() !== 'yes') && (userAnswer.toLowerCase() !== 'y') && (userAnswer.toLowerCase() !== 'no') && (userAnswer.toLowerCase() !== 'n')){
     console.log ('Invalid answer, please try again with a yes/no or y/n');
     alert ('invalid answer , please try again with a yes/no or a y/n');
-    userAnswer =prompt (d.toLowerCase());
+    userAnswer =prompt (userAnswerResubmit.toLowerCase());
   }
   switch (userAnswer.toLowerCase()){
   case 'y':
   case 'yes':
-    console.log (g);
-    alert (h);
+    console.log (wrongAnswerConsoleResponse);
+    alert (wrongAnswerAlertResponse);
     alert (' your current score is '+ score +' out of 7');
     break;
   case 'n':
   case 'no':
-    console.log (e);
-    alert (f);
+    console.log (rightAnswerConsoleResponse);
+    alert (rightAnswerAlertResponse);
     score++;
     alert (' your current score is '+ score +' out of 7');
     break;
   }
-  return (userAnswer,d,e,f,g,h);
+  return (userAnswer,userAnswerResubmit,rightAnswerConsoleResponse,rightAnswerAlertResponse,wrongAnswerConsoleResponse,wrongAnswerAlertResponse);
 }
 
 
